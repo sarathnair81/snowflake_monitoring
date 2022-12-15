@@ -7,7 +7,7 @@ import logging
  
 # Gets the version
 ctx = snowflake.connector.connect(
-user=''SVC_SNOWDEV_EDPDEV_APICA'',
+user='SVC_SNOWDEV_EDPDEV_APICA',
 password='sn0wflak3_SF@apicadev9',
 account='deltadentalins-dev'
 )
