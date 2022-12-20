@@ -6,7 +6,7 @@ import logging
 import json
 import pandas as pd
 
-USER = "<USER_NAME>"
+USER = "SVC_SNOWDEV_EDPDEV_APICA"
 PASSWORD = "<PASSWORD>"
 ACCOUNT = "<ACCOUNT>"
 
