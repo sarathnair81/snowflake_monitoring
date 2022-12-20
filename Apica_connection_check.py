@@ -8,7 +8,7 @@ import pandas as pd
 
 USER = "SVC_SNOWDEV_EDPDEV_APICA"
 PASSWORD = "sn0wflak3_SF@apicadev9"
-ACCOUNT = "<ACCOUNT>"
+ACCOUNT = "deltadentalins-dev"
 
 conn = connect(
     user=USER,
