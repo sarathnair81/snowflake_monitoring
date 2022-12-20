@@ -7,7 +7,7 @@ import json
 import pandas as pd
 
 USER = "SVC_SNOWDEV_EDPDEV_APICA"
-PASSWORD = "<PASSWORD>"
+PASSWORD = "sn0wflak3_SF@apicadev9"
 ACCOUNT = "<ACCOUNT>"
 
 conn = connect(
