@@ -36,8 +36,13 @@ current_user = df.CONNECTED_USER[0]
 #print(json)
 
 json_return = {
+    "returncode": 0,
     "current_time": current_time,
-    "current_user": current_user
+    "current_user": current_user,
+    "message": "URL call returned status code: " + str(response.status_code),
+    "unit": "ms",
+    "value": response.status.code,
+
 }
 print(json_return)
 cursor.close()
