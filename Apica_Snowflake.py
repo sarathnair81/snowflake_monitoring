@@ -8,7 +8,7 @@ import json
 import pandas as pd
 
 USER = "SVC_SNOWDEV_EDPDEV_APICA"
-PASSWORD = "<password>"
+PASSWORD = "sn0wflak3_SF@apicadev9"
 ACCOUNT = "<account>"
 DB = "<db>"
 WAREHOUSE = "<wh>"
