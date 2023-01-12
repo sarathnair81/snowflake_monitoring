@@ -30,7 +30,7 @@ df = cursor.fetch_pandas_all()
 #print(df)
 
 current_time = df.CURRENT_TIME[0]
-current_user = df.CONNECTED_USER[0]
+#current_user = df.CONNECTED_USER[0]
 
 #json = df.to_json()
 #print(json)
