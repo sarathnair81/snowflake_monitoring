@@ -27,16 +27,16 @@ conn = connect(
 
 sql1 = "SELECT CURRENT_TIMESTAMP() AS EVENT_TIMESTAMP, CURRENT_USER AS USER_NAME"
 
-#sql2 = "select * from table(information_schema.login_history_by_user(user_name => 'HAREESH', result_limit => 1)) order by event_timestamp"
+sql2 = "select * from table(information_schema.login_history_by_user(user_name => 'HAREESH', result_limit => 1)) order by event_timestamp"
 
 cursor = conn.cursor()
-cursor.execute(sql1)
-first_row = cur.fetchone()
-#df = cursor.fetch_pandas_all()
-# print(df)
-print(first_row)
+cursor.execute(sql2)
+#first_row = cur.fetchone()
+df = cursor.fetch_pandas_all()
+print(df)
+#print(first_row)
 
-'''
+
 return_code = 0
 current_time = df.EVENT_TIMESTAMP[0]
 current_user = df.USER_NAME[0]
@@ -61,7 +61,7 @@ json_return = {
     "message": message,
     "value": value_code
 }
-print(json.loads(json_return))
+print(json.load(json_return))
 cursor.close()
 #print("Closed Snowflake connection")
-'''
+
