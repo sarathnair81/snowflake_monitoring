@@ -10,8 +10,8 @@ import pandas as pd
 USER = "SVC_SNOWDEV_EDPDEV_APICA"
 PASSWORD = "sn0wflak3_SF@apicadev9"
 ACCOUNT = "deltadentalins-dev"
-DB = "<db>"
-WAREHOUSE = "<wh>"
+DB = "edpdev"
+WAREHOUSE = "wh_edpdev_rpt"
 
 conn = connect(
     user=USER,
