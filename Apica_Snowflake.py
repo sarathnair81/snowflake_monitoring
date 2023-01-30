@@ -58,6 +58,6 @@ json_return = {
     "message": message,
     "value": value_code
 }
-print(json_return)
+print(json.dumps(json_return))
 cursor.close()
 #print("Closed Snowflake connection")
