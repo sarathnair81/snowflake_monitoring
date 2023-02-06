@@ -5,6 +5,9 @@ from snowflake.connector import connect
 import logging 
 import json 
 import pandas as pd
+import time
+
+start_time = time.time()
 
 USER = "SVC_SNOWDEV_EDPDEV_APICA"
 PASSWORD = "sn0wflak3_SF@apicadev9"
@@ -35,6 +38,7 @@ df = cursor.fetch_pandas_all()
 #print(df)
 #print(first_row)
 
+end_time = time.time()
 
 return_code = 0
 current_time = str(df.EVENT_TIMESTAMP[0])
@@ -54,8 +58,8 @@ else:
 
 json_return = {
     "returncode": return_code,
-    "start_time": current_time,
-    "end_time": current_time,
+    "start_time": start_time,
+    "end_time": end_time,
     "current_user": current_user,
     "message": message,
     "value": value_code
