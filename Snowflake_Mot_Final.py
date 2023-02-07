@@ -29,7 +29,7 @@ conn = connect(
 
 sql1 = "SELECT CURRENT_TIMESTAMP() AS EVENT_TIMESTAMP, CURRENT_USER AS USER_NAME"
 
-sql2 = "select * from table(information_schema.login_history_by_user(user_name => 'SVC_SNOWDEV_EDPDEV_APICA', result_limit => 1)) order by event_timestamp"
+sql2 = "select * from table(information_schema.login_history_by_user(user_name => 'SVC_SNOWTST_EDPMOT_APICA', result_limit => 1)) order by event_timestamp"
 
 cursor = conn.cursor()
 cursor.execute(sql2)
